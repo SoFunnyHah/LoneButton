@@ -4,7 +4,9 @@ import path from 'path';
 import indexRouter from './routes/indexRouter';
 import jsxRender from './utils/jsxRendex';
 
-const PORT = 3005;
+require('dotenv').config();
+
+const PORT = process.env.PORT || 3005;
 
 const app = express();
 
